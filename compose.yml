@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   devopsdb:
-    image: hansika001/automation:db Docker-db
+    image: hansika001/automation:db
     ports:
       - "3306:3306"
     deploy:
@@ -11,7 +11,7 @@ services:
       - mynetwork
 
   application:
-    image: hansika001/automation:app Docker-app
+    image: hansika001/automation:app
     ports:
       - "1111:8080"
     deploy:
