@@ -14,8 +14,6 @@ services:
     image: hansika001/automation:app
     ports:
       - "1111:8080"
-    deploy:
-      replicas: 3
     depends_on:
       - devopsdb
     networks:
